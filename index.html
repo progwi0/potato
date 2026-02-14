@@ -1,0 +1,235 @@
+<html>
+	<head>
+		<title>progwi0 - Potato (Web)</title>
+	</head>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Tiny5&display=swap');
+
+		body{
+			background-color: white;
+			color: black;
+			margin: 0;
+			text-align: center;
+			font-family: "Tiny5", sans-serif;
+		}
+		main{
+			background-color: white;
+			color: black;
+			margin: 0;
+			text-align: center;
+		}
+		button{
+			background-color: #008700;
+			color: white;
+			border: none;
+			outline: solid;
+			outline-color: black;
+			outline-width: 5px;
+			width: 10%;
+			height: 5%;
+			cursor: pointer;
+			font-family: "Tiny5", sans-serif;
+		}
+		button:hover{
+			background-color: #339F33;
+			color: white;
+			border: none;
+			outline: solid;
+			outline-color: black;
+			outline-width: 5px;
+			width: 10%;
+			height: 5%;
+		}
+		button:active{
+			background-color: #006C00;
+			color: white;
+			border: none;
+			outline: solid;
+			outline-color: black;
+			outline-width: 5px;
+			width: 10%;
+			height: 5%;
+		}
+		.youtube{
+			background-color: #E10000;
+			color: white;
+			border: none;
+			outline: solid;
+			outline-color: black;
+			outline-width: 5px;
+			width: 10%;
+			height: 5%;
+			cursor: pointer;
+		}
+		.youtube:hover{
+			background-color: #E73333;
+			color: white;
+			border: none;
+			outline: solid;
+			outline-color: black;
+			outline-width: 5px;
+			width: 10%;
+			height: 5%;
+		}
+		.youtube:active{
+			background-color: #B40000;
+			color: white;
+			border: none;
+			outline: solid;
+			outline-color: black;
+			outline-width: 5px;
+			width: 10%;
+			height: 5%;
+		}
+		.tiktok{
+			background-color: #00D7D9;
+			color: white;
+			border: none;
+			outline: solid;
+			outline-color: black;
+			outline-width: 5px;
+			width: 10%;
+			height: 5%;
+			cursor: pointer;
+		}
+		.tiktok:hover{
+			background-color: #33DFE1;
+			color: white;
+			border: none;
+			outline: solid;
+			outline-color: black;
+			outline-width: 5px;
+			width: 10%;
+			height: 5%;
+		}
+		.tiktok:active{
+			background-color: #00ACAE;
+			color: white;
+			border: none;
+			outline: solid;
+			outline-color: black;
+			outline-width: 5px;
+			width: 10%;
+			height: 5%;
+		}
+		.instagram{
+			background-color: #9900FF;
+			color: white;
+			border: none;
+			outline: solid;
+			outline-color: black;
+			outline-width: 5px;
+			width: 10%;
+			height: 5%;
+			cursor: pointer;
+		}
+		.instagram:hover{
+			background-color: #AD33FF;
+			color: white;
+			border: none;
+			outline: solid;
+			outline-color: black;
+			outline-width: 5px;
+			width: 10%;
+			height: 5%;
+		}
+		.instagram:active{
+			background-color: #7A00CC;
+			color: white;
+			border: none;
+			outline: solid;
+			outline-color: black;
+			outline-width: 5px;
+			width: 10%;
+			height: 5%;
+		}
+		header{
+			background-color: darkblue;
+			color: white;
+			width: 100%;
+			height: 12.5%;
+			top: 0;
+			text-align: center;
+			justify-content: center;
+			align-content: center;
+		}
+		footer{
+			background-color: darkred;
+			color: white;
+			width: 100%;
+			height: 12.5%;
+			bottom: 0;
+			position: fixed;
+			text-align: center;
+		}
+		div{
+			outline: solid;
+			outline-color: black;
+			outline-width: 5px;
+			width: 25%;
+			justify-content: center;
+			align-content: center;
+		}
+		main{
+			outline: solid;
+			outline-color: black;
+			outline-width: 5px;
+			width: 100%;
+			height: 100%;
+			justify-content: center;
+			align-content: center;
+		}
+		input{
+			outline: solid;
+			outline-color: black;
+			outline-width: 5px;
+			width: 25%;
+			justify-content: center;
+			align-content: center;
+			background-color: white;
+			color: black;
+			border: none;
+			text-align: center;
+			font-family: "Tiny5", sans-serif;
+			height: 5%;
+		}
+		.sigma{
+			cursor: pointer;
+		}
+	</style>
+	<body>
+		<main>
+			<h2 id="pg">Привіт, я Potato.<br />Я проста енциклопедія, яка зроблена у незвичайному вигляді.<br />Я - як чат-бот, але якщо ти напишеш назву статті то я виведу її у цьому тексті!</h2>
+			<br />
+			<input placeholder="sigma" id="pgs"></input>
+			<button onclick="search()">Шукать</button>
+		</main>
+		<footer>
+			<center><img src="progwi0.png" width="3%" style="padding: 0.75%;"></center>
+			<span>2021-2026 progwi0. Користуючись цим програмним забезпеченням, ви погоджуєтесь на <a href="https://progwi0.github.io/cou">ці</a> умови використання.</span>
+		</footer>
+	</body>
+	<script>
+		pgs = document.getElementById("pgs");
+		
+		function search(){
+			if(pgs.value == "progwi0"){
+				document.querySelector("#pg").innerHTML = "<a href='https://progwi0.github.io'>progwi0</a> - ютубер, тіктокер, музикант і розробник програмного забезпечення.<br />Створив браузер Kreka, текстовий редактор Fifi, створив Lapiz і Abacus. Користується FydeOS.";
+			} else if(pgs.value == "google"){
+				document.querySelector("#pg").innerHTML = "<a href='https://www.google.com/'>Google</a> - компанія та пошукова система, заснована ще у 2000-х. Найпопулярніша пошукова система у світі. Використовується у більшості браузерів і її продукти використовують більшість телефонів."
+			} else if(pgs.value == "chrome"){
+				document.querySelector("#pg").innerHTML = "Chrome - браузер від Google. Використовує пошукову систему Google (дуже дивно...), має доступ до більшості їхніх сервісів і взагалі найпопулярніший браузер."
+			} else if(pgs.value == "kreka"){
+				document.querySelector("#pg").innerHTML = "<a href='https://progwi0.github.io/kreka'>Kreka</a> - браузер від progwi0. Відрізняється від інших своїм нестандартним виглядом та вимкненим JavaScript."
+			} else if(pgs.value == "gameium"){
+				document.querySelector("#pg").innerHTML = "Gameium - команда, яка робить ігри для комп'ютерів та телефонів. Має тільки 1 гру - WarPixel."
+			} else if(pgs.value == "гітара"){
+				document.querySelector("#pg").innerHTML = "Гітара - струнний музичний інструмент, звичайно має 6 або 7 струн. Грається затисненням на ладах. 50% аккордів використовує барре."
+			} else if(pgs.value == "укулеле"){
+				document.querySelector("#pg").innerHTML = "Укулеле - струнний музичний інструмент, звичайно має 4 струни.<br />Як і гітара, грається затисненням на ладах. Має різні види - сопрано, концерт, тенор і баритон. З назви зрозуміло, що вони відрізняються звучанням."
+			} else if(pgs.value == "укулеле"){
+				document.querySelector("#pg").innerHTML = "Укулеле - струнний музичний інструмент, звичайно має 4 струни.<br />Як і гітара, грається затисненням на ладах. Має різні види - сопрано, концерт, тенор і баритон. З назви зрозуміло, що вони відрізняються звучанням."
+			}
+		}
+	</script>
+</html>
